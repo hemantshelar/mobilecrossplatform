@@ -18,7 +18,8 @@ namespace xPlatAuction.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(savedInstanceState);
-            global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+			Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+			global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
         }
     }

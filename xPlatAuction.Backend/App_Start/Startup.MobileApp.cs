@@ -39,7 +39,7 @@ namespace xPlatAuction.Backend
 					TokenHandler = config.GetAppServiceTokenHandler()
 				});
 			}
-
+			ConfigureSwagger(config);
 			app.UseWebApi(config);
 		}
 	}
