@@ -41,8 +41,8 @@ namespace xPlatAuction.Backend.Controllers
         // POST tables/Student
         public async Task<IHttpActionResult> PostStudent(Student item)
         {
-			var childcareCenter = context.ChildCareCenters.Where(c => c.Id == item.Center.Id).SingleOrDefault();
-			item.Center = childcareCenter;
+			//var childcareCenter = context.ChildCareCenters.Where(c => c.Id == item.Center.Id).SingleOrDefault();
+			//item.Center = childcareCenter;
 
             Student current = await InsertAsync(item);
             return CreatedAtRoute("Tables", new { id = current.Id }, current);

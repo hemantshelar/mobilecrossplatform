@@ -197,6 +197,10 @@
     <Compile Include="Migrations\201904261103599_posts-like-parents.Designer.cs">
       <DependentUpon>201904261103599_posts-like-parents.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904261140539_foreign key constrain.cs" />
+    <Compile Include="Migrations\201904261140539_foreign key constrain.Designer.cs">
+      <DependentUpon>201904261140539_foreign key constrain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -233,6 +237,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904261103599_posts-like-parents.resx">
       <DependentUpon>201904261103599_posts-like-parents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904261140539_foreign key constrain.resx">
+      <DependentUpon>201904261140539_foreign key constrain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
