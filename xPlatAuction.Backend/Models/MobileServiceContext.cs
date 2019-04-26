@@ -36,5 +36,9 @@ namespace xPlatAuction.Backend.Models
 		}
 
 		public System.Data.Entity.DbSet<xPlatAuction.Backend.DataObjects.Auction> Auctions { get; set; }
+
+		public System.Data.Entity.DbSet<xPlatAuction.Backend.DataObjects.ChildCareCenter> ChildCareCenters { get; set; }
+
+		public System.Data.Entity.DbSet<xPlatAuction.Backend.DataObjects.Student> Students { get; set; }
 	}
 }
