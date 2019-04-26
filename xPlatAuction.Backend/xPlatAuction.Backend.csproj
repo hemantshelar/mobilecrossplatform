@@ -167,12 +167,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Startup.MobileApp.cs" />
+    <Compile Include="Controllers\AuctionController.cs" />
     <Compile Include="Controllers\TodoItemController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DataObjects\Auction.cs" />
     <Compile Include="DataObjects\TodoItem.cs" />
     <Compile Include="Migrations\201904260701268_InitialCreate.cs" />
     <Compile Include="Migrations\201904260701268_InitialCreate.Designer.cs">
       <DependentUpon>201904260701268_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904261037557_Auction.cs" />
+    <Compile Include="Migrations\201904261037557_Auction.Designer.cs">
+      <DependentUpon>201904261037557_Auction.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
@@ -201,6 +207,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201904260701268_InitialCreate.resx">
       <DependentUpon>201904260701268_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904261037557_Auction.resx">
+      <DependentUpon>201904261037557_Auction.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
