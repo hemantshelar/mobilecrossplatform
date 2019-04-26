@@ -4,11 +4,10 @@
              xmlns:local="clr-namespace:xPlatAuction"
              x:Class="xPlatAuction.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Hello Arushi!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+        <Label x:Name="message"></Label>
+        <Button Clicked="Button_Clicked" Text="Load an item"></Button>
+        
     </StackLayout>
 
 </ContentPage>

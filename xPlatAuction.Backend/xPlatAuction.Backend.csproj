@@ -175,7 +175,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -189,6 +191,7 @@
   <ItemGroup>
     <Compile Include="App_Start\Startup.Swagger.cs" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\xPlatAuctionHemant - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
