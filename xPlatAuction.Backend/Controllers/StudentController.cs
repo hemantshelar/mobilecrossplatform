@@ -11,10 +11,12 @@ namespace xPlatAuction.Backend.Controllers
 {
     public class StudentController : TableController<Student>
     {
-        protected override void Initialize(HttpControllerContext controllerContext)
+		private MobileServiceContext context;
+
+		protected override void Initialize(HttpControllerContext controllerContext)
         {
             base.Initialize(controllerContext);
-            MobileServiceContext context = new MobileServiceContext();
+            context = new MobileServiceContext();
             DomainManager = new EntityDomainManager<Student>(context, Request);
         }
 
@@ -39,6 +41,9 @@ namespace xPlatAuction.Backend.Controllers
         // POST tables/Student
         public async Task<IHttpActionResult> PostStudent(Student item)
         {
+			var childcareCenter = context.ChildCareCenters.Where(c => c.Id == item.Center.Id).SingleOrDefault();
+			item.Center = childcareCenter;
+
             Student current = await InsertAsync(item);
             return CreatedAtRoute("Tables", new { id = current.Id }, current);
         }

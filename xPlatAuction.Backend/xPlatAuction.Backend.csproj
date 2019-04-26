@@ -169,11 +169,16 @@
     <Compile Include="App_Start\Startup.MobileApp.cs" />
     <Compile Include="Controllers\AuctionController.cs" />
     <Compile Include="Controllers\ChildCareCenterController.cs" />
+    <Compile Include="Controllers\LikeController.cs" />
+    <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TodoItemController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="DataObjects\Auction.cs" />
     <Compile Include="DataObjects\ChildCareCenter.cs" />
+    <Compile Include="DataObjects\Like.cs" />
+    <Compile Include="DataObjects\Parent.cs" />
+    <Compile Include="DataObjects\Post.cs" />
     <Compile Include="DataObjects\Student.cs" />
     <Compile Include="DataObjects\TodoItem.cs" />
     <Compile Include="Migrations\201904260701268_InitialCreate.cs" />
@@ -187,6 +192,10 @@
     <Compile Include="Migrations\201904261047023_childcare-center-and-student.cs" />
     <Compile Include="Migrations\201904261047023_childcare-center-and-student.Designer.cs">
       <DependentUpon>201904261047023_childcare-center-and-student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904261103599_posts-like-parents.cs" />
+    <Compile Include="Migrations\201904261103599_posts-like-parents.Designer.cs">
+      <DependentUpon>201904261103599_posts-like-parents.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
@@ -221,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904261047023_childcare-center-and-student.resx">
       <DependentUpon>201904261047023_childcare-center-and-student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904261103599_posts-like-parents.resx">
+      <DependentUpon>201904261103599_posts-like-parents.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
