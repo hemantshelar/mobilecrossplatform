@@ -11,9 +11,9 @@ namespace xPlatAuction.Backend.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "xPlatAuction.Backend.Models.MobileServiceContext";
+			ContextKey = "xPlatAuction.Backend.Models.MobileServiceContext";
 			SetSqlGenerator("System.Data.SqlClient", new EntityTableSqlGenerator());
-        }
+		}
 
         protected override void Seed(xPlatAuction.Backend.Models.MobileServiceContext context)
         {

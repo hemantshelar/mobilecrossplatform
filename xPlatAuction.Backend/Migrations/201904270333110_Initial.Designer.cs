@@ -7,13 +7,13 @@ namespace xPlatAuction.Backend.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class foreignkeyconstrain : IMigrationMetadata
+    public sealed partial class Initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(foreignkeyconstrain));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904261140539_foreign key constrain"; }
+            get { return "201904270333110_Initial"; }
         }
         
         string IMigrationMetadata.Source

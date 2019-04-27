@@ -168,40 +168,32 @@
   <ItemGroup>
     <Compile Include="App_Start\Startup.MobileApp.cs" />
     <Compile Include="Controllers\AuctionController.cs" />
+    <Compile Include="Controllers\AuctionItemController.cs" />
+    <Compile Include="Controllers\BidController.cs" />
     <Compile Include="Controllers\ChildCareCenterController.cs" />
     <Compile Include="Controllers\LikeController.cs" />
+    <Compile Include="Controllers\MyItemsController.cs" />
     <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TodoItemController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DataObjects\AuctionItemDBEntity.cs" />
     <Compile Include="DataObjects\Auction.cs" />
+    <Compile Include="DataObjects\Bid.cs" />
     <Compile Include="DataObjects\ChildCareCenter.cs" />
     <Compile Include="DataObjects\Like.cs" />
+    <Compile Include="DataObjects\MyAuctionItem.cs" />
     <Compile Include="DataObjects\Parent.cs" />
     <Compile Include="DataObjects\Post.cs" />
     <Compile Include="DataObjects\Student.cs" />
     <Compile Include="DataObjects\TodoItem.cs" />
-    <Compile Include="Migrations\201904260701268_InitialCreate.cs" />
-    <Compile Include="Migrations\201904260701268_InitialCreate.Designer.cs">
-      <DependentUpon>201904260701268_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904261037557_Auction.cs" />
-    <Compile Include="Migrations\201904261037557_Auction.Designer.cs">
-      <DependentUpon>201904261037557_Auction.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904261047023_childcare-center-and-student.cs" />
-    <Compile Include="Migrations\201904261047023_childcare-center-and-student.Designer.cs">
-      <DependentUpon>201904261047023_childcare-center-and-student.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904261103599_posts-like-parents.cs" />
-    <Compile Include="Migrations\201904261103599_posts-like-parents.Designer.cs">
-      <DependentUpon>201904261103599_posts-like-parents.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904261140539_foreign key constrain.cs" />
-    <Compile Include="Migrations\201904261140539_foreign key constrain.Designer.cs">
-      <DependentUpon>201904261140539_foreign key constrain.cs</DependentUpon>
+    <Compile Include="DomainManager\AuctionItemDomainManager.cs" />
+    <Compile Include="Migrations\201904270333110_Initial.cs" />
+    <Compile Include="Migrations\201904270333110_Initial.Designer.cs">
+      <DependentUpon>201904270333110_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AuctionItem.cs" />
     <Compile Include="Models\MobileServiceContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -222,24 +214,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\Startup.Swagger.cs" />
+    <Compile Include="App_Start\Startup.AutoMapper.cs" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\xPlatAuctionHemant - Web Deploy.pubxml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201904260701268_InitialCreate.resx">
-      <DependentUpon>201904260701268_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904261037557_Auction.resx">
-      <DependentUpon>201904261037557_Auction.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904261047023_childcare-center-and-student.resx">
-      <DependentUpon>201904261047023_childcare-center-and-student.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904261103599_posts-like-parents.resx">
-      <DependentUpon>201904261103599_posts-like-parents.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904261140539_foreign key constrain.resx">
-      <DependentUpon>201904261140539_foreign key constrain.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904270333110_Initial.resx">
+      <DependentUpon>201904270333110_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
