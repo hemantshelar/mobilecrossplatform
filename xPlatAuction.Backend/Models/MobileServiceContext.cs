@@ -47,6 +47,6 @@ namespace xPlatAuction.Backend.Models
 
 		public System.Data.Entity.DbSet<xPlatAuction.Backend.DataObjects.AuctionItemDBEntity> AuctionItemDBEntities { get; set; }
 
-		public DbSet<Bid> Bids { get; set; }
+		public DbSet<Bid> Bids { get; set; }		
 	}
 }
